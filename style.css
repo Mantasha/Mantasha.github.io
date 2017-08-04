@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  color:white;
+}
+h1   {color: #6d22c3;}
+h2   {color: #757b8a}
+/*// span{
+//  margin: 0;
+//  padding: 0;
+// }
+
+//
+//
+// .orbs{
+//  font-family: ‘Raleway’, sans-serif;
+//  font-weight: 100;
+//  display: block;
+//  font-size: 128px;
+//
+//
+//  span{
+//     color: red;
+//    display: inline-block;
+//    text-align: left;
+//    border-radius: 50%;
+//    text-shadow: 0 0 20px orange, 1px 1px 20px orange, 2px 2px 20px orange, -1px -1px 20px orange, -2px -2px 20px orange;
+//    position: absolute;
+//    left: 50%;
+//
+//    &:first-child{
+//      margin-left: -610px;
+//    }
+//
+//    &:not(:first-child){
+//      margin-left: -35px;
+//    }
+//  }
+// }*/
