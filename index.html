@@ -17,6 +17,62 @@
 	</head>
 
 	<body>
+  <style style="text/css">
+.horizontally {
+height: 50px;
+overflow: hidden;
+position: relative;
+background: black;
+color: white;
+border: 0px solid black;
+}
+.horizontally p {
+position: absolute;
+width: 130%;
+height: 140%;
+margin: 0;
+line-height: 50px;
+text-align: center;
+/* Starting position */
+-moz-transform:translateX(50%);
+-webkit-transform:translateX(50%);
+transform:translateX(50%);
+/* Apply animation to this element */
+-moz-animation: horizontally 7s linear infinite alternate;
+-webkit-animation: horizontally 7s linear infinite alternate;
+animation: horizontally 7s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+0%   { -moz-transform: translateX(50%); }
+100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes horizontally {
+0%   { -webkit-transform: translateX(50%); }
+100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes horizontally {
+0%   {
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%);
+}
+100% {
+-moz-transform: translateX(-50%); /* Browser bug fix */
+-webkit-transform: translateX(-50%); /* Browser bug fix */
+transform: translateX(-50%);
+}
+}
+</style>
+
+<div class="horizontally">
+<p>Welcome to my Website! </p>
+</div>
+<marquee behavior="slide" direction="right">
+<img src="https://media.giphy.com/media/l1J3DaHzWEp2bTpYs/giphy.gif" width="1250" height="150" alt="fireworks" />
+
+</marquee>
+
 
 
 
@@ -27,30 +83,9 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 
-							<span class=“orbs”>
- <span>M</span>
- <span>a</span>
- <span>n</span>
- <span>t</span>
- <span>a</span>
- <span>s</span>
- <span>h</span>
- <span>a</span>
- <br>
- <span>L</span>
- <span>a</span>
- <span>k</span>
- <span>d</span>
- <span>a</span>
- <span>w</span>
- <span>a</span>
- <span>l</span>
- <span>a</span>
-</span>
+						  <h1> Mantasha Lakdawala </h1>
 							<p class="major">The path to success isn't a straight one. There are several turns, holes, and obstacles you have to get through in order to experience success. When you finally overcome all of that, I promise it will all be worth it. <span style="font-weight:bold">Just don't give up!</span></p>
-							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Learn more!</a></li>
-							</ul>
+
 						</div>
 						<div class="image">
 							<img src="https://www.thestar.com/content/dam/thestar/life/2012/08/06/see_the_night_sky_as_it_was_meant_to_be_seen_1/dark_sky_site_40km_n_ofnapanee.jpeg.size.custom.crop.589x650.jpg" alt="hi" />
@@ -65,9 +100,7 @@
 								I am a foodie, so I love to try new foods. My favorite cuisines are Chinese food and Afghan food. Also, I am a huge sneakerhead and
 							everytime I see a cute pair of shoes, I have to buy it! My shoe collection consists mostly of Vans and Adidas as they are my favorite
 							brands. Although I am a people person and very outgoing, I enjoy time to myself.</p>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
+
 						</div>
 						<div class="image">
 							<img src="images/IMG_4059.jpg" alt="" />
@@ -100,33 +133,36 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 
-              <h1><span style="font-weight:bold">Proficient</span></h1>
+							<div class="">
+									<div class="" style="float:left; width: 65%; overflow: hidden;">
 
-      <ul>
-        <li>Java</li>
-				<li>Javascript</li>
-				<li>HTML</li>
-				<li>CSS</li>
-        <li>Microsoft Word</li>
-        <li>Microsoft Powerpoint</li>
-        <li>Microsoft Outlook</li>
+		              <h1><span style="font-weight:bold">Proficient</span></h1>
 
-      </ul>
+						      <ul>
+						        <li>Java</li>
+										<li>Javascript</li>
+										<li>HTML</li>
+										<li>CSS</li>
+						        <li>Microsoft Word</li>
+						        <li>Microsoft Powerpoint</li>
+						        <li>Microsoft Outlook</li>
+
+						      </ul>
+								</div>
 
 
+								<div class="" style="overflow: hidden;">
+								      <h1><span style="font-weight:bold">Exposure</span></h1>
+								      <ul>
+												<li>IT Essentials</li>
+												<li>PC Hardware</li>
+												<li>Terminal</li>
+												<li>Git/Github</li>
+												</ul>
+								<!--Five-->
+								</div>
+						</div>
 
-      <h1><span style="font-weight:bold">Exposure</span></h1>
-      <ul>
-
-<li>IT Essentials</li>
-<li>PC Hardware</li>
-<li>Terminal</li>
-<li>Git/Github</li>
-</ul>
-<!--Five-->
-<ul class="actions vertical">
-	<li><a href="#" class="button">Learn More</a></li>
-</ul>
 </div>
 <div class="image">
 <img src="https://s-media-cache-ak0.pinimg.com/originals/5d/f9/47/5df9471547eaa309dd06d90670d48331.jpg" alt="" />
@@ -136,28 +172,32 @@
 	<div class="content">
 
 		<h1><span style="font-weight:bold">Education</span></h1>
+
+
 		<h2>International Studies Academy May 2015</h2>
-		<ul>
+
 			<li>High School Diploma</li>
-		</ul>
+		
+		<h2>Dev/Mission Summer 2017</h2>
+		<li>IT Fundamentals</li>
+    <li>Intro to Programming(CSS,HTML,JavaScript)</li>
+    <li>Career Readiness</li>
 
 		<h2>San Francisco State University May 2019</h2>
 		<ul>
 			<li>Bachelor's Degree in Computer Science</li>
 			<li>Associate's Degree in Mathematics</li>
 
-			<h2>Dev/Mission</h2>
 
+</div>
 
 
 
 <!-- Six -->
 
 
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
+
+
 						<div class="image">
 							<img src="https://static.tumblr.com/0edfe1cd5c2999157406b1ccba3c3272/jj4xbeo/kSXoa47wy/tumblr_static_filename_640_v2.jpg" alt="" />
 						</div>
@@ -182,16 +222,13 @@
               <ul>
     <li>Provided excellent customer service by being kind, patient, and organized.</li>
     <li>Efficiently manage cash register and accurately accounted for all transactions.</li>
-
     <li>Prepared the room for the shift the following day by cleaning and providing a sanitary place.</li>
 
 
 
 
   </ul>
-							<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
+
 						</div>
 						<div class="image">
 							<img src="https://ak5.picdn.net/shutterstock/videos/8407066/thumb/10.jpg?i10c=img.resize(height:160)" alt="" />

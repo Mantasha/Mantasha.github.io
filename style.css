@@ -1,8 +1,12 @@
 body {
-  background-color: black;
+  background-color:  #0d0d0d;
+
   color:white;
 }
-h1   {color: #6d22c3;}
+
+h1 {
+  text-shadow: 0 0 6px  #7a00cc;
+}
 h2   {color: #757b8a}
 /*// span{
 //  margin: 0;
